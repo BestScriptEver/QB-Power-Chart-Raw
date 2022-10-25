@@ -1,0 +1,302 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local PowerChart = Instance.new("ScreenGui")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+local TextLabel_4 = Instance.new("TextLabel")
+local TextLabel_5 = Instance.new("TextLabel")
+local TextLabel_6 = Instance.new("TextLabel")
+local TextLabel_7 = Instance.new("TextLabel")
+local TextLabel_8 = Instance.new("TextLabel")
+local TextLabel_9 = Instance.new("TextLabel")
+local TextLabel_10 = Instance.new("TextLabel")
+local TextLabel_11 = Instance.new("TextLabel")
+local TextLabel_12 = Instance.new("TextLabel")
+local TextLabel_13 = Instance.new("TextLabel")
+local TextLabel_14 = Instance.new("TextLabel")
+local TextLabel_15 = Instance.new("TextLabel")
+local TextLabel_16 = Instance.new("TextLabel")
+local TextLabel_17 = Instance.new("TextLabel")
+local TextLabel_18 = Instance.new("TextLabel")
+local TextLabel_19 = Instance.new("TextLabel")
+local TextLabel_20 = Instance.new("TextLabel")
+local UIListLayout = Instance.new("UIListLayout")
+
+--Properties:
+
+PowerChart.Name = "PowerChart"
+PowerChart.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+PowerChart.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+ScrollingFrame.Parent = PowerChart
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ScrollingFrame.BorderColor3 = Color3.fromRGB(255, 0, 0)
+ScrollingFrame.Position = UDim2.new(0.756383181, 0, 0.0290456507, 0)
+ScrollingFrame.Size = UDim2.new(0, 237, 0, 293)
+
+TextLabel.Parent = ScrollingFrame
+TextLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel.Position = UDim2.new(0.0490196161, 0, 0.009573563, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 22)
+TextLabel.Font = Enum.Font.Jura
+TextLabel.Text = "1 Power = 1 Yard"
+TextLabel.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel.TextSize = 14.000
+
+TextLabel_2.Parent = ScrollingFrame
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel_2.Position = UDim2.new(0.0490196161, 0, 0.0320225433, 0)
+TextLabel_2.Size = UDim2.new(0, 200, 0, 22)
+TextLabel_2.Font = Enum.Font.Jura
+TextLabel_2.Text = "5 Power = 2 Yard"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel_2.TextSize = 14.000
+
+TextLabel_3.Parent = ScrollingFrame
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.BorderColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel_3.Position = UDim2.new(0.0490196161, 0, 0.0544715226, 0)
+TextLabel_3.Size = UDim2.new(0, 200, 0, 22)
+TextLabel_3.Font = Enum.Font.Jura
+TextLabel_3.Text = "10 Power = 4 Yard"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel_3.TextSize = 14.000
+
+TextLabel_4.Parent = ScrollingFrame
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.BorderColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel_4.Position = UDim2.new(0.0490196161, 0, 0.12283887, 0)
+TextLabel_4.Size = UDim2.new(0, 200, 0, 22)
+TextLabel_4.Font = Enum.Font.Jura
+TextLabel_4.Text = "25 Power = 10 Yard"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel_4.TextSize = 14.000
+
+TextLabel_5.Parent = ScrollingFrame
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_5.BorderColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel_5.Position = UDim2.new(0.0490196161, 0, 0.0759000927, 0)
+TextLabel_5.Size = UDim2.new(0, 200, 0, 22)
+TextLabel_5.Font = Enum.Font.Jura
+TextLabel_5.Text = "15 Power = 5 Yard"
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel_5.TextSize = 14.000
+
+TextLabel_6.Parent = ScrollingFrame
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_6.BorderColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel_6.Position = UDim2.new(0.0490196161, 0, 0.145287842, 0)
+TextLabel_6.Size = UDim2.new(0, 200, 0, 22)
+TextLabel_6.Font = Enum.Font.Jura
+TextLabel_6.Text = "30 Power = 15 Yard"
+TextLabel_6.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel_6.TextSize = 14.000
+
+TextLabel_7.Parent = ScrollingFrame
+TextLabel_7.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_7.BorderColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel_7.Position = UDim2.new(0.0490196161, 0, 0.098349072, 0)
+TextLabel_7.Size = UDim2.new(0, 200, 0, 22)
+TextLabel_7.Font = Enum.Font.Jura
+TextLabel_7.Text = "20 Power = 8 Yard"
+TextLabel_7.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel_7.TextSize = 14.000
+
+TextLabel_8.Parent = ScrollingFrame
+TextLabel_8.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_8.BorderColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel_8.Position = UDim2.new(0.0490196161, 0, 0.167736828, 0)
+TextLabel_8.Size = UDim2.new(0, 200, 0, 22)
+TextLabel_8.Font = Enum.Font.Jura
+TextLabel_8.Text = "35 Power = 17 Yard"
+TextLabel_8.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel_8.TextSize = 14.000
+
+TextLabel_9.Parent = ScrollingFrame
+TextLabel_9.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_9.BorderColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel_9.Position = UDim2.new(0.0490196161, 0, 0.190185815, 0)
+TextLabel_9.Size = UDim2.new(0, 200, 0, 22)
+TextLabel_9.Font = Enum.Font.Jura
+TextLabel_9.Text = "40 Power = 22 Yard"
+TextLabel_9.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel_9.TextSize = 14.000
+
+TextLabel_10.Parent = ScrollingFrame
+TextLabel_10.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_10.BorderColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel_10.Position = UDim2.new(0.0490196161, 0, 0.212634802, 0)
+TextLabel_10.Size = UDim2.new(0, 200, 0, 22)
+TextLabel_10.Font = Enum.Font.Jura
+TextLabel_10.Text = "45 Power = 27 Yard"
+TextLabel_10.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel_10.TextSize = 14.000
+
+TextLabel_11.Parent = ScrollingFrame
+TextLabel_11.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_11.BorderColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel_11.Position = UDim2.new(0.0490196161, 0, 0.235083789, 0)
+TextLabel_11.Size = UDim2.new(0, 200, 0, 22)
+TextLabel_11.Font = Enum.Font.Jura
+TextLabel_11.Text = "50 Power = 30 Yard"
+TextLabel_11.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel_11.TextSize = 14.000
+
+TextLabel_12.Parent = ScrollingFrame
+TextLabel_12.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_12.BorderColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel_12.Position = UDim2.new(0.0490196161, 0, 0.253451139, 0)
+TextLabel_12.Size = UDim2.new(0, 200, 0, 22)
+TextLabel_12.Font = Enum.Font.Jura
+TextLabel_12.Text = "55 Power = 39 Yard"
+TextLabel_12.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel_12.TextSize = 14.000
+
+TextLabel_13.Parent = ScrollingFrame
+TextLabel_13.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_13.BorderColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel_13.Position = UDim2.new(0.0490196161, 0, 0.275900126, 0)
+TextLabel_13.Size = UDim2.new(0, 200, 0, 22)
+TextLabel_13.Font = Enum.Font.Jura
+TextLabel_13.Text = "60 Power = 49 Yard"
+TextLabel_13.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel_13.TextSize = 14.000
+
+TextLabel_14.Parent = ScrollingFrame
+TextLabel_14.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_14.BorderColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel_14.Position = UDim2.new(0.0490196161, 0, 0.298349112, 0)
+TextLabel_14.Size = UDim2.new(0, 200, 0, 22)
+TextLabel_14.Font = Enum.Font.Jura
+TextLabel_14.Text = "65 Power = 54 Yard"
+TextLabel_14.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel_14.TextSize = 14.000
+
+TextLabel_15.Parent = ScrollingFrame
+TextLabel_15.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_15.BorderColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel_15.Position = UDim2.new(0.0490196161, 0, 0.320798099, 0)
+TextLabel_15.Size = UDim2.new(0, 200, 0, 22)
+TextLabel_15.Font = Enum.Font.Jura
+TextLabel_15.Text = "70 Power = 63 Yard"
+TextLabel_15.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel_15.TextSize = 14.000
+
+TextLabel_16.Parent = ScrollingFrame
+TextLabel_16.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_16.BorderColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel_16.Position = UDim2.new(0.0490196161, 0, 0.343247086, 0)
+TextLabel_16.Size = UDim2.new(0, 200, 0, 22)
+TextLabel_16.Font = Enum.Font.Jura
+TextLabel_16.Text = "75 Power = 74 Yard"
+TextLabel_16.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel_16.TextSize = 14.000
+
+TextLabel_17.Parent = ScrollingFrame
+TextLabel_17.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_17.BorderColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel_17.Position = UDim2.new(0.0490196161, 0, 0.365696073, 0)
+TextLabel_17.Size = UDim2.new(0, 200, 0, 22)
+TextLabel_17.Font = Enum.Font.Jura
+TextLabel_17.Text = "80 Power = 80 Yard"
+TextLabel_17.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel_17.TextSize = 14.000
+
+TextLabel_18.Parent = ScrollingFrame
+TextLabel_18.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_18.BorderColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel_18.Position = UDim2.new(0.0490196161, 0, 0.388145059, 0)
+TextLabel_18.Size = UDim2.new(0, 200, 0, 22)
+TextLabel_18.Font = Enum.Font.Jura
+TextLabel_18.Text = "85 Power = 87 Yard"
+TextLabel_18.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel_18.TextSize = 14.000
+
+TextLabel_19.Parent = ScrollingFrame
+TextLabel_19.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_19.BorderColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel_19.Position = UDim2.new(0.0490196161, 0, 0.410594046, 0)
+TextLabel_19.Size = UDim2.new(0, 200, 0, 22)
+TextLabel_19.Font = Enum.Font.Jura
+TextLabel_19.Text = "90 Power = 97 Yard"
+TextLabel_19.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel_19.TextSize = 14.000
+
+TextLabel_20.Parent = ScrollingFrame
+TextLabel_20.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_20.BorderColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel_20.Position = UDim2.new(0.0490196161, 0, 0.433043033, 0)
+TextLabel_20.Size = UDim2.new(0, 200, 0, 22)
+TextLabel_20.Font = Enum.Font.Jura
+TextLabel_20.Text = "95 Power = 105 Yards (TD)"
+TextLabel_20.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel_20.TextSize = 14.000
+
+UIListLayout.Parent = ScrollingFrame
+UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.Padding = UDim.new(0.00999999978, 0)
+
+-- Scripts:
+
+local function FDALRL_fake_script() -- ScrollingFrame.LocalScript 
+	local script = Instance.new('LocalScript', ScrollingFrame)
+
+	while true do
+		for a = 1,360,1 do
+			wait(0.05)
+			script.Parent.BorderColor3 = Color3.fromHSV(a/360,1,1)
+		end
+	end
+end
+coroutine.wrap(FDALRL_fake_script)()
+local function OOIYHM_fake_script() -- PowerChart.LocalScript 
+	local script = Instance.new('LocalScript', PowerChart)
+
+	local MainFrame = script.Parent
+	local UserInputService = game:GetService("UserInputService")
+	
+	UserInputService.InputBegan:Connect(function(KeyCode)
+			if KeyCode.KeyCode == Enum.KeyCode.RightAlt then
+				MainFrame.Enabled = false
+	UserInputService.InputBegan:Connect(function(KeyCode)
+			if KeyCode.KeyCode == Enum.KeyCode.LeftAlt then
+				MainFrame.Enabled = true
+				end
+			end)
+		end
+	end)
+end
+
+
+-- Rainbow Color
+while true do
+	for a = 1,360,1 do
+		wait(0.05)
+		game.StarterGui.PowerChart.ScrollingFrame.BorderColor3 = Color3.fromHSV(a/360,1,1)
+	end
+end
+
+-- Turn on and off
+local MainFrame = game.StarterGui.PowerChart
+local UserInputService = game:GetService("UserInputService")
+
+UserInputService.InputBegan:Connect(function(KeyCode)
+	if KeyCode.KeyCode == Enum.KeyCode.RightAlt then
+		MainFrame.Enabled = false
+		UserInputService.InputBegan:Connect(function(KeyCode)
+			if KeyCode.KeyCode == Enum.KeyCode.LeftAlt then
+				MainFrame.Enabled = true
+			end
+		end)
+	end
+end)
+coroutine.wrap(OOIYHM_fake_script)()
